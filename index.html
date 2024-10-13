@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eco-Simple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6x9FVR5SUn1cZ++KcgTjICZ+TzkgO2yPY0bs4m2ywHpSWcAkvG1CbaTClqjfZlbgi85Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Style général */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #2e8b57;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+        .hero-section {
+            background-color: #e8f5e9;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #2e8b57;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            width: 12ch;
+            animation: typing 3s steps(12), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 12ch;
+            }
+        }
+
+        @keyframes blink {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #2e8b57;
+            }
+        }
+
+        .hero img {
+            margin-top: 20px;
+            width: 150px;
+        }
+
+        .icon-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #f0f0f0;
+        }
+
+        .icon-section div {
+            text-align: center;
+        }
+
+        .icon-section i {
+            font-size: 3rem;
+            color: #2e8b57;
+            margin-bottom: 10px;
+        }
+
+        .icon-section p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>helllo world</h1>
+
+   <header>
+        <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </nav>
+   </header>
+
+   <main>
+    <!-- Hero Section avec animation de typing -->
+    <section class="hero-section">
+        <div class="hero">
+            <h1><span id="eco">Eco</span>-Simple</h1>
+            <a href="#"><img src="path-to-logo.png" alt="Eco-Simple Logo"></a>
+        </div>
+    </section>
+
+    <!-- Section avec des icônes -->
+    <section class="icon-section">
+        <div>
+            <i class="fas fa-leaf"></i>
+            <p>Durabilité écologique</p>
+        </div>
+        <div>
+            <i class="fas fa-recycle"></i>
+            <p>Recyclage et réutilisation</p>
+        </div>
+        <div>
+            <i class="fas fa-solar-panel"></i>
+            <p>Énergie renouvelable</p>
+        </div>
+    </section>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+        <section class="footer">
+            <div>
+                <p>&copy; 2024 Eco-Simple. Tous droits réservés.</p>
+            </div>
+        </section>
+   </footer>
+
 </body>
 </html>
